@@ -1,8 +1,8 @@
 #!/usr/bin/python
 
-# Hunter Friday
-# breakcaesar.py
-# Prints out all 26 possible rotations of a string you give it. Handy for CTFs!
+# Author: Hunter Friday
+# Title: breakcaesar.py
+# Description: Prints out all 26 possible letter rotations of the string you give it. Handy for CTFs!
 # Usage: python breakcaesar.py "ciphertext"
 
 import sys
