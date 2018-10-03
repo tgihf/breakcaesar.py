@@ -29,17 +29,17 @@ for rotation in range(1, possible_rotations + 1):
     # For each letter in word:
     for i in range(0, len(word)):
 
-        # If the letter is lowercase, rotate it
+        # If the letter is upper case, rotate it
         if ord(word[i]) >= 65 and ord(word[i]) <= 90:
             index = upper_alpha.find(word[i])
             rotated += upper_alpha[(index + rotation) % len(upper_alpha)]
 
-        # Else if the letter is upper case, rotate it
+        # Else if the letter is lower case, rotate it
         elif ord(word[i]) >= 97 and ord(word[i]) <= 122:
             index = lower_alpha.find(word[i])
             rotated += lower_alpha[(index + rotation) % len(lower_alpha)]
 
-        # Else must be special character, retain it
+        # Else it must be special character, so retain it
         else:
             rotated += word[i]
 
